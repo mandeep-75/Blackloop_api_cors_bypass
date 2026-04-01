@@ -19,9 +19,9 @@ async function fetchStreamData({ type, id, season, episode }) {
   if (type === "movie") {
     url = `${BASE_URL}/stream/movie/${id}.json`;
   } else if (type === "series") {
-    season = season || 1;
-    episode = episode || 1;
-    url = `${BASE_URL}/stream/series/${id}.json?season=${season}&episode=${episode}`;
+    const seasonNum = parseInt(season, 10) || 1;
+    const episodeNum = parseInt(episode, 10) || 1;
+    url = `${BASE_URL}/stream/series/${id}.json?season=${seasonNum}&episode=${episodeNum}`;
   } else {
     throw new Error("Unknown type. Use 'movie' or 'series'.");
   }

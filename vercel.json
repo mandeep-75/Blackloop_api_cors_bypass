@@ -2,27 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/stream-links.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/get-qualities.js",
-      "use": "@vercel/node"
-    },
-    {
       "src": "api/torrentio.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/api/stream-links",
-      "dest": "/api/stream-links.js"
-    },
-    {
-      "src": "/api/get-qualities",
-      "dest": "/api/get-qualities.js"
-    },
     {
       "src": "/api/torrentio",
       "dest": "/api/torrentio.js"
