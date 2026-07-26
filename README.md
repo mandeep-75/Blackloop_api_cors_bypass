@@ -93,3 +93,5 @@ package.json          # Dependencies and scripts
 |---------|-------------|
 | `npm start` | Run production server |
 | `npm run dev` | Run development server with auto-reload |
+---
+*Auto-sync: 2026-07-26 11:03*
